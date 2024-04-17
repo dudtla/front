@@ -1,0 +1,23 @@
+body{
+  background-color: rgb(131, 131, 201);
+}
+
+#t01 {
+  width: 800px;
+  height: 500px;
+  /* background-color: red; */
+  border: 30px dashed rgb(254, 17, 207);
+  box-sizing: border-box;
+  background-image: url(../resources/img/wawa.jpg);
+  /* 기본적으로 repeat으로 반복 */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+  /* background-size: 800px 500px; */
+
+  /* background-position: 50% 50%; */
+  background-origin: border-box;
+  /* background-origin: padding-box; */
+  /* background-origin: content-box; */
+}

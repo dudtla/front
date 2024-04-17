@@ -1,0 +1,60 @@
+.box{
+  width: 100px;
+  height: 100px ;
+  border: 1px solid black;
+  background-color: rgb(209, 238, 194);
+}
+
+/* 위치이동 */
+#test-2d:hover{
+  /* transform: translateX(100px); */
+  /* transform: translateY(100px); */
+  /* transform: translate(100px, 100px); */
+
+  /* 사이즈 조절 */
+  /* transform: scale(2,3); */
+  /* transform: scaleX(2); */
+
+  /* 회전 */
+  /* transform: rotateX(93deg); */
+  /* transform: rotateY(45deg); */
+  /* transform: rotateZ(-45deg); */
+
+  /* 비틀기 */
+  /* transform: skewX(-30deg); */
+  /* transform: skewY(-30deg); */
+  transform: skew(30deg, 45deg);
+}
+
+/* x,y,z한번에 적용하기 따로따로 적용해도 된다.*/
+#test-3d:hover{
+/* transform: perspective(300px) translate3d(0px, 0px, 0px); */
+/* transform: perspective(300px) rotate3d(1, 1, 0, 30deg); */
+transform: perspective(300px) scale3d(2, 0.5, 10);
+}
+.box-small{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(170, 170, 231);
+}
+
+#test-etc {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#target:hover{
+  transform-origin: 0% 0%;
+  transform: rotate(30deg);
+}
+
+
+
+
+
+
+
+
+

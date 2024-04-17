@@ -1,0 +1,47 @@
+#div00{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+
+  /* 배치하기*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+}
+
+#div00 > div{
+  width: 30%;
+  height: 30%;
+  background-color: cadetblue;
+  border: 3px solid rgb(80, 80, 80);
+  box-sizing: border-box;
+  /* display: inline-block; */
+  /* float: left; */
+
+}
+
+#outer{
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#target{
+  width: 50%;
+  height: 50%;
+  background-color: grey;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}

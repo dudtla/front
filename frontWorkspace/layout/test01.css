@@ -1,0 +1,125 @@
+/* 기본 CSS를 리셋해주는게 좋다 그래야 원하는 결과물이 나옴 */
+body , h1, h2, h3{
+  margin: 0;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  
+}
+
+/* 그리드로 칸 나누기 */
+#main{
+  width: 30vw;
+  height: 100vw;
+  display: grid;
+  background-color: white;
+  grid-template-rows: 3fr 4fr 1fr 2fr 4fr;
+  grid-template-columns: 1fr;
+}
+
+/* 로고 위치 잡아주기 */
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 로고 아래로 내리기 */
+#logo > img {
+  margin-top: 10%;
+}
+
+#login{
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+#login > div:nth-child(1){
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+}
+
+#div-id, #div-pwd {
+  border: 1px solid rgb(182, 181, 181);
+  width: 80%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#login input {
+  border: 0px;
+  width: 80%;
+  height: 60%;
+}
+
+#div-id{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 0px;
+}
+
+#div-pwd{
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#login input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+}
+
+#login-btn-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-btn-wrap >button{
+  width: 90%;
+  height: 80%;
+  color: white;
+  background-color: #1daf5f;
+  font-weight: 900;
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 8px;
+
+}
+
+
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu > span{
+  font-size: 0.7em;
+  color: rgb(113, 112, 112);
+}
+
+#ad-img-area{
+  width: 100%;
+  height: 100%;
+  background-image: url(../resources/img/kh_logo.png);
+  background-size: contain;
+  background-position: center center;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
