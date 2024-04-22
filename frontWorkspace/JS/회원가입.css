@@ -1,0 +1,86 @@
+body{
+  width: 100vh;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 236, 236);
+}
+
+
+#wrap{
+  width: 600px;
+  height: 700px;
+  background-color: rgb(198, 197, 197);
+  font-size: 1.5em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
+  
+  justify-items: center;
+  align-items: center;
+
+
+}
+
+#wrap input{
+  width: 80%;
+ background-color: transparent;
+  border: 0px;
+  border-bottom: 1px dashed black;
+}
+
+/* text박스 크기 조정해주기 
+박스 아래에 글자 조정하기 */
+#wrap > div:nth-child(4),
+#wrap > div:nth-child(6){
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrap > div:nth-child(4) > div{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+/* 안내문구 안보이게 하기 */
+#pwdText , #pwdCheckText{
+  visibility: hidden;
+}
+
+
+#pwdText.active,
+#pwdCheckText.active{
+  visibility: visible;
+}
+
+#wrap > div:last-child{
+  width: 100%;
+  height: 100%;
+
+  grid-column: span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#wrap > div:last-child > button {
+  width: 80%;
+  height: 20%;
+  background-color: green;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+#pwdCheckText{
+  font-size: 16px;
+}
